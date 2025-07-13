@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4.5rem);
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.google {
+  background-color: #4285F4;
+  color: white;
+}
+
+.otp {
+  background-color: #34A853;
+  color: white;
+}
+
+.verify {
+  background-color: #fbbc05;
+  color: black;
+}
+
+.logout {
+  background-color: crimson;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.divider {
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #555;
+}

@@ -1,0 +1,71 @@
+nav{
+    height: 4.2rem;
+    width: 100%;
+    background-color: rgb(239, 237, 234);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(0,0,0,0.629);
+    
+
+   
+
+
+
+
+>.left{
+    font-size: 2.8rem;
+    color: rgb(154, 86, 86);
+}
+
+
+
+
+
+>.right{
+    font-size: 1.4rem;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+
+
+    > a,button {
+        font-weight: 490;
+        color: #080808;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    
+
+    &:hover{
+        color: rgb(96, 95, 95);
+    }
+    }
+}
+}
+
+@media (max-width:600px) {
+    
+    nav{
+        padding: .8rem ;
+        height: 4.2rem;
+        display: flex;
+        justify-content: space-between;
+
+    
+
+
+    >.right{
+        display: flex;
+        width: 85%;
+        gap: 0px;
+        justify-content: space-evenly;
+        font-size: 1.3rem;
+        font-weight: 550;
+    }
+
+
+    }
+
+
+}

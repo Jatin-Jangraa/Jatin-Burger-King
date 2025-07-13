@@ -1,0 +1,712 @@
+.itemmainbox{
+    height: calc(100vh - 4.2rem);
+    /* background-color: rgb(207, 217, 214); */
+    width: 100vw;
+
+
+    >.itemmainheader{
+        height: 18%;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 2rem;
+
+.backbutton{
+    height: 2.8rem;
+    width: 2.8rem;
+    background-color: rgb(157, 159, 160);
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50% ;
+    font-size: 1.1rem;
+}
+
+        .pureveg{
+            align-items: center;
+            height: 100%;
+            width: 35%;
+            /* background-color: beige; */
+            display: flex;
+            /* flex-direction: column; */
+            /* justify-content: space-evenly; */
+            padding: 1rem 1rem;
+            
+            .vegpure{
+                height: max-content;
+                background-color: rgb(171, 228, 171);
+                width: max-content;
+                font-size: 1.1vw;
+                color: green;
+                font-weight: 500;
+                
+                padding: 5px 10px;
+                border-radius: 13px;
+            }
+
+
+
+            .vegsellername{
+                font-size: 2.5vw;
+                font-weight: 500;
+            }
+        }
+
+
+
+        >.itemmainrating{
+            height: 100%;
+            width: 15%;
+            /* background-color: aquamarine; */
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+
+            >.itemmainrate{
+                background-color: rgb(71, 148, 71);
+                width: max-content;
+                padding: 5px 8px;
+                border-radius: 10px;
+                color: white;
+                font-weight: 550;
+                font-size: 1.4vw;
+
+            }
+        }
+
+
+    }
+
+    >.ingridientsbox{
+        background-color:#f0f0f0;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    >.itemamount{
+        height: 72%;
+        width: 100%;
+        display: flex;
+        /* background-color: aqua; */
+        
+   
+
+
+        >.itemamountimage{
+        
+        /* padding: 1.5rem 2.3rem; */
+            height: 100%;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: antiquewhite; */
+            border-right: 1.3px solid rgb(86, 84, 84);
+
+
+            .itemamountimag{
+                width: 15rem;
+                background-color: rgb(234, 236, 236);
+                padding: 20px 0px;
+                border-radius: 15px;
+                margin: 0px 20px;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+.itemamountdetail{
+  height: auto;
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+padding: 0px 10px;
+/* background-color: black; */
+
+
+
+    .iteamountmdata{
+width: 75%;
+height: auto;
+padding: 0px 10px;
+/* background-color: antiquewhite; */
+
+
+    >.itemamounttime{
+font-size: .9rem;
+font-weight: 500;
+    }
+
+
+    >.itemamountseller{
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .itemamountdiss{
+      font-size: .85rem;
+      font-weight: 450;
+    }}}
+
+
+
+    .itemamountright{
+    >div{
+      background-color: white;
+      border-radius: 9px;
+      padding: 0.1rem .3rem;
+      border: 1.4px solid green;
+      color: green;
+      
+
+
+      >p{
+        font-size: .8rem;
+      }
+    }
+  }
+
+
+
+  .itemsize{
+    /* background-color: rgb(152, 150, 147); */
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 3rem;
+    overflow-y: scroll;
+
+&::-webkit-scrollbar{
+    display: none;
+}
+   
+
+    >.add_cart{
+        height: 20%;
+        width: 100%;
+        /* background-color: beige; */
+  display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 0rem;
+        >.cartbutton{
+            background-color: rgb(178, 180, 180);
+            padding:.8rem 2rem ;
+            width: 20rem;
+            margin: 0rem 0px;
+            margin-bottom: 1rem;
+            border-radius:15px ;
+            font-size: 1.1rem;
+            font-weight: 550;
+                &:hover{
+                    cursor: pointer;
+                }
+          
+        }
+    }
+
+
+    >.bothdata{
+        display: flex;
+        width: 100%;
+        height: auto;
+        gap: 15px;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        /* background-color: rgb(139, 138, 136); */
+    
+    
+    >.itemsizeselect{
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+       width: 20rem;
+        background-color: rgb(205, 206, 206);
+        border-radius: 15px;
+        padding: .1rem 2rem;
+        min-width: auto;
+
+
+        .itemsizeselecty{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 80%;
+            gap: .8rem;
+        }
+
+
+        .itemsizeselectp{
+            font-size: 1.5rem;
+            font-weight: 480;
+        }
+   
+    .itemsizeselect_1{
+           display: flex;
+           background-color: rgb(242, 242, 241);
+           padding: .5rem 2rem;
+           justify-content: space-between;
+ font-size: 1.1rem;
+                font-weight: 500;
+            label{
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+
+           
+        }
+   
+   .size_internal{
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+   }
+    }
+
+
+
+
+
+
+
+
+
+    >.itemaddon{
+          height: 15rem;
+        width: 20rem;
+        background-color:  rgb(205, 206, 206);
+        border-radius: 15px;
+
+ display: flex;
+        flex-direction: column;
+      
+        padding: .3rem 2rem;
+
+       .itemsizeselecty{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 80%;
+            gap: .8rem;
+        }
+
+         .itemsizeselectp{
+            font-size: 1.5rem;
+            font-weight: 480;
+        }
+   
+    .itemsizeselect_1{
+           display: flex;
+           background-color: rgb(242, 242, 241);
+           padding: .5rem 2rem;
+           justify-content: space-between;
+ font-size: 1.1rem;
+                font-weight: 500;
+            label{
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+
+           
+        }
+   
+   .size_internal{
+    
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+   }
+    }
+
+
+
+}
+  }
+
+   
+
+
+
+
+
+
+  @media (max-width:650px) {
+
+    
+.itemmainbox{
+    height: calc(100vh - 4.2rem);
+    /* background-color: rgb(207, 217, 214); */
+    width: 100vw;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+
+    >.itemmainheader{
+        height: 8%;
+        height: auto;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 2rem;
+
+.backbutton{
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(157, 159, 160);
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:50% ;
+    font-size: 1.1rem;
+}
+
+        >.pureveg{
+            height: 100%;
+            width: 55%;
+            /* background-color: beige; */
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            padding: 1rem 0rem;
+            
+            >.vegpure{
+                height: max-content;
+                /* height: 100%; */
+                background-color: rgb(171, 228, 171);
+                width: max-content;
+                font-size: 2vw;
+                color: green;
+                font-weight: 500;
+                
+                padding: 5px 10px;
+                border-radius: 13px;
+            }
+
+
+
+            .vegsellername{
+                font-size: 5vw;
+                font-weight: 500;
+            }
+        }
+
+
+
+        >.itemmainrating{
+            /* height: 50px; */
+            width: 15%;
+            /* background-color: aquamarine; */
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+
+            >.itemmainrate{
+                background-color: rgb(71, 148, 71);
+                width: max-content;
+                padding: 5px 8px;
+                border-radius: 10px;
+                color: white;
+                font-weight: 550;
+                font-size: 2.4vw;
+
+            }
+        }
+
+
+    }
+
+    >.ingridientsbox{
+        background-color:#f0f0f0;
+        height: 6%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    >.itemamount{
+        height: 86%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: aqua; */
+        
+   
+
+
+        >.itemamountimage{
+        
+        /* padding: 1.5rem 2.3rem; */
+            /* height:30rem; */
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: antiquewhite; */
+            border-bottom: 1.5px solid rgba(86, 84, 84, 0.638);
+            border-right: none;
+/* border: none; */
+
+            .itemamountimag{
+                /* height: 18rem; */
+                width: 18rem;
+                background-color: rgb(234, 236, 236);
+                padding: 20px 0px;
+                margin: 15px 0px;
+                border-radius: 15px;
+                /* margin: 0px 20px; */
+            }
+
+        }
+
+    }
+
+}
+
+
+
+.itemamountdetail{
+  height: auto;
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+padding: 0px 10px;
+/* background-color: black; */
+
+
+
+    .iteamountmdata{
+width: 75%;
+height: auto;
+padding: 0px 10px;
+/* background-color: antiquewhite; */
+
+
+    >.itemamounttime{
+font-size: .9rem;
+font-weight: 500;
+    }
+
+
+    >.itemamountseller{
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .itemamountdiss{
+      font-size: .85rem;
+      font-weight: 450;
+    }}}
+
+
+
+    .itemamountright{
+    >div{
+      background-color: white;
+      border-radius: 9px;
+      padding: 0.1rem .3rem;
+      border: 1.4px solid green;
+      color: green;
+      
+
+
+      >p{
+        font-size: .8rem;
+      }
+    }
+  }
+
+
+
+  .itemsize{
+    /* background-color: rgb(152, 150, 147); */
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 3rem;
+    /* overflow-y: scroll; */
+    overflow-y: visible;
+
+&::-webkit-scrollbar{
+    display: none;
+}
+   
+itemsizeselectp
+    >.add_cart{
+        height: 20%;
+        width: 100%;
+        /* background-color: beige; */
+  display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0rem 1rem;
+
+        >.cartbutton{
+            background-color: rgb(178, 180, 180);
+            padding:.8rem .1rem ;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            width: 100%;
+            border-radius:15px ;
+            font-size: 1.1rem;
+            font-weight: 550;
+                &:hover{
+                    cursor: pointer;
+                }
+          
+        }
+    }
+
+
+    >.bothdata{
+        display: flex;
+        width: 100%;
+        height: auto;
+        gap: 15px;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        /* background-color: rgb(139, 138, 136); */
+    
+    
+    >.itemsizeselect{
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+       width: 20rem;
+       height: auto;
+       
+        background-color: rgb(205, 206, 206);
+        border-radius: 15px;
+        padding: 1.3rem 1.5rem;
+        min-width: auto;
+
+
+        .itemsizeselecty{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 80%;
+            gap: .8rem;
+        }
+
+
+        .itemsizeselectp{
+            font-size: 1.5rem;
+            font-weight: 480;
+            padding: .5rem 0px;
+        }
+   
+    .itemsizeselect_1{
+           display: flex;
+           background-color: rgb(242, 242, 241);
+           padding: .5rem 2rem;
+           justify-content: space-between;
+           align-items: center;
+ font-size: 1.1rem;
+                font-weight: 500;
+            label{
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+
+           
+        }
+   
+   .size_internal{
+    display: flex;
+    gap: .8rem;
+   }
+    }
+
+
+
+
+
+
+
+
+
+    >.itemaddon{
+          height: 15rem;
+          height: auto;
+        width: 20rem;
+        background-color:  rgb(205, 206, 206);
+        border-radius: 15px;
+
+ display: flex;
+        flex-direction: column;
+      
+        padding: 1.3rem 1.5rem;
+
+       .itemsizeselecty{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 80%;
+            gap: .8rem;
+
+
+
+        }
+.itemsizeselectp{
+            font-size: 1.5rem;
+            font-weight: 480;
+            padding: .5rem 0px;
+        }
+        
+   
+    .itemsizeselect_1{
+           display: flex;
+           background-color: rgb(242, 242, 241);
+           padding: .5rem 2rem;
+           justify-content: space-between;
+ font-size: 1.1rem;
+                font-weight: 500;
+            label{
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+
+           
+        }
+   
+   .size_internal{
+    display: flex;
+    gap: .8rem;
+   }
+    }
+
+
+
+}
+  }
+
+
+  }
