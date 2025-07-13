@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Sitemap: User-agent: *
 Allow: /
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://jatin-burger-king.onrender.com/sitemap.xml

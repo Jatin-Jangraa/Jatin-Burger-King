@@ -81,7 +81,7 @@ const Contact = () => {
           <h2>Commerce Burger Wala</h2>
           <p>We are trying to give you the best taste possible.</p>
           <p><em>We give attention to genuine feedback.</em></p>
-          <p className="rights">All rights received @mbaburgerwala</p>
+          <p className="rights">All rights received @jatin_burgerking</p>
         </div>
 
         <div className="footer-right">
