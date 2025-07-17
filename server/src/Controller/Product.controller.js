@@ -24,7 +24,7 @@ export const newproduct = async (req, res) => {
 
 export const allproducts = async (req, res) => {
   try {
-    const products = await ProductData.find({});
+    const products = await ProductData.find({}).sort({createdAt :-1});
 
     res.json(products);
   } catch (error) {

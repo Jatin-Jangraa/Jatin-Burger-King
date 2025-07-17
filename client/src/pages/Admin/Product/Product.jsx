@@ -99,8 +99,14 @@ const Product = () => {
   };
 
   const handleDelete = async (id) => {
-    await productapi.delete(`/${id}`);
-    fetchProducts();
+
+    const confirm   = window.confirm("Are you sure to Delete Product .")
+
+    if(confirm){
+
+      await productapi.delete(`/${id}`);
+    fetchProducts()
+  }
   };
 
   const toggleAvailability = async (product) => {

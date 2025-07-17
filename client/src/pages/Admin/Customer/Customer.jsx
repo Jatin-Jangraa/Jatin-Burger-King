@@ -6,11 +6,14 @@ import { MdOutlineDeleteOutline } from "react-icons/md";
 import { useState } from 'react';
 import { userapi } from '../../../Api';
 import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { data } from 'react-router-dom';
 const Customer = () => {
 
 
 
 
+  const {user} = useSelector((state)=>state.user.user) 
 
 
 
@@ -20,7 +23,7 @@ console.log(users);
 
   const alluser = async ()=>{
   try {
-      const res = await userapi.get("/alluser")
+      const res = await userapi.post("/alluser",{userid:user._id})
 
 
       setusers(res.data.alluser)
@@ -45,11 +48,11 @@ console.log(users);
   const deletehandler = async (uid) =>{
     
     try {
-      const confirm = window.confirm("Are You Sure to Delete USer Permanentally")
+      const confirm = window.confirm("Are You Sure to Delete User Permanentally")
 
 
     if(confirm){
-      const res = await userapi.delete(`/delete/${uid}`)
+      const res = await userapi.delete(`/delete/${uid}`,{data:{userid:user._id}})
 
       alluser()
 

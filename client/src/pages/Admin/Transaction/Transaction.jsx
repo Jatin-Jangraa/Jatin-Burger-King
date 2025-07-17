@@ -10,65 +10,21 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { FaInfoCircle } from "react-icons/fa";
 import { orderapi } from '../../../Api';
+import { useSelector } from 'react-redux';
 
 const Transaction = () => {
+
+
+    const {user} = useSelector((state)=>state.user.user) 
+  
+
+
   const statusOptions = ["Delivered", "Shipped", "Processing"];
 
 
  
   
 
-  const initialData = [
-    {
-      id: 1,
-      customername: "Jatin",
-      amount: 520,
-      status: "Processing",
-      _id: "686a64d2609b10986c187b23",
-      customerId: "KEuaNSkl0fegkepGvHIZqckSOpA3",
-      orderitems: [
-        {
-          name: "Pizza",
-          size: "Large",
-          quantity: 1,
-          price: 350,
-          image: "https://res.cloudinary.com/dvkfvgzlp/image/upload/v1751526768/products/pju548nvb96kwzra7tdr.png",
-          additional: [
-            { name: "Cold Drink", price: 90 },
-            { name: "Chilli Souce", price: 30 }
-          ]
-        },
-         {
-          name: "Pizza",
-          size: "Large",
-          quantity: 1,
-          price: 350,
-          image: "https://res.cloudinary.com/dvkfvgzlp/image/upload/v1751526768/products/pju548nvb96kwzra7tdr.png",
-          additional: [
-            { name: "Cold Drink", price: 90 },
-            { name: "Chilli Souce", price: 30 }
-          ]
-        }
-      ],
-      paymentmode: "COD Payment",
-      shippingcharges: 20,
-      shippinginfo: {
-        Contactno: "8898989",
-        flat: "hanuman mandir",
-        address: "bhodia khera",
-        city: "Fatehabad",
-        state: "Haryana",
-        country: "India"
-      },
-      subtotal: 350,
-      tax: 63,
-      total: 520,
-      createdAt: "2025-07-06T11:58:10.152+00:00",
-      updatedAt: "2025-07-06T11:58:10.152+00:00"
-    },
-    
-    // Add more items if needed
-  ];
 
   
 
@@ -85,7 +41,7 @@ const Transaction = () => {
 
     try {
       
-      const res = await orderapi.put(`/${_id}`,{status :newStatus})
+      const res = await orderapi.put(`/${_id}`,{status :newStatus,userid:user._id})
 
     } catch (error) {
       
@@ -100,7 +56,7 @@ const Transaction = () => {
 
   const getdata = async () =>{
 
-    const res = await orderapi.get("/all")
+    const res = await orderapi.post("/all",{userid:user._id})
 
 setData(res.data.allorder)
 // setData(initialData)
@@ -165,7 +121,7 @@ console.log(data);
 
                         if(confirm){
 
-                       await orderapi.delete(`/${item._id}`);
+                       await orderapi.delete(`/${item._id}`,{data:{userid:user._id}});
                          getdata();
                         }
                       }}>

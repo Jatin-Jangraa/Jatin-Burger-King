@@ -5,9 +5,11 @@ import PieChart from '../../../../components/Chart/PieChart'
 import Sidebar from '../../../../components/Sidebar/Sidebar'
 import PieComponent from '../../../../components/Chart/PieChart'
 import { dashapi } from '../../../../Api'
+import { useSelector } from 'react-redux'
 
 const Pie = () => {
 
+  const {user} = useSelector((state)=>state.user.user) 
 
 
     
@@ -28,7 +30,7 @@ console.log(apidata);
 const getdata =async() =>{
  try {
   
-  const res = await dashapi.get("pie")
+  const res = await dashapi.post("pie",{userid:user._id})
 
   setapidata(res.data.charts)
 

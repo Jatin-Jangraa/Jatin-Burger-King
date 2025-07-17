@@ -34,23 +34,39 @@ app.use(express.static(path.join(__dirname,"../../client/dist")))
 
 
 
-
+// control only by admin
 app.use("/api/v1/user" ,userroute)
+
+
+
+
+// control only by admin
+app.use("/api/v1/order",orderroute)
+
 
 
 
 app.use("/api/v1/product",productroute)
 
 
-app.use("/api/v1/location" ,locationfetch)
 
-app.use("/api/v1/order",orderroute)
 
+// if admin
 app.use ("/api/v1/dashboard",dashroute)
 
 
 
+//fetch location 
+app.use("/api/v1/location" ,locationfetch)
+
+
+
+// get mail of user  
 app.post ("/api/v1/contact",contact)
+
+
+
+// send orderdetails to user on mail
 app.post("/api/v1/confirm",confirmOrder)
 
 

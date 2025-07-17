@@ -6,7 +6,11 @@ import BarChart from '../../../../components/Chart/BarChart'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { dashapi } from '../../../../Api'
+import { useSelector } from 'react-redux'
 const Bar = () => {
+
+    const {user} = useSelector((state)=>state.user.user) 
+  
 
 
   const [apidata ,setapidata] = useState(null)
@@ -25,7 +29,7 @@ const chartdata = {
   
       try {
   
-        const res = dashapi.get("/bar")
+        const res = dashapi.post("/bar",{userid:user._id})
   
   
         setapidata((await res).data.charts)

@@ -49,6 +49,7 @@ const pageTransition = {
       <div className='homebox12'>
       
     <motion.button
+     onClick={menuhandler}
        initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
     whileTap={{ scale: 0.95 }}
@@ -61,36 +62,42 @@ const pageTransition = {
 
     <div className='homebox2'>
  <motion.button 
+  onClick={menuhandler}
     initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
   whileTap={{ scale: 0.95 }}
     whileHover={{ scale: 1.05, backgroundColor: "transparent" }}
     transition={{ type: "spring", stiffness: 400, damping: 10 }}className='sandbutton'><img src="http://res.cloudinary.com/dhte80xl2/image/upload/v1752118773/kp18j2qesipqzgapuqmx.png" alt="" className='sandimage'/></motion.button>
    <motion.button 
+    onClick={menuhandler}
      initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
    whileTap={{ scale: 0.95 }}
     whileHover={{ scale: 1.05, backgroundColor: "transparent" }}
     transition={{ type: "spring", stiffness: 400, damping: 10 }}className='sandbutton'><img src="http://res.cloudinary.com/dhte80xl2/image/upload/v1752118828/nxz39wtteafmum2zvhnn.webp" alt="" className='sandimage'/></motion.button> 
   <motion.button 
+   onClick={menuhandler}
     initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
   whileTap={{ scale: 0.95 }}
     whileHover={{ scale: 1.05, backgroundColor: "transparent" }}
     transition={{ type: "spring", stiffness: 400, damping: 10 }}className='sandbutton'><img src="http://res.cloudinary.com/dhte80xl2/image/upload/v1752118860/hq13i8gwlxnd7iuvy3sm.jpg" alt="" className='sandimage'/></motion.button>
      <motion.button 
+      onClick={menuhandler}
        initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
            whileTap={{ scale: 0.95 }}
     whileHover={{ scale: 1.05, backgroundColor: "transparent" }}
     transition={{ type: "spring", stiffness: 400, damping: 10 }}className='sandbutton'><img src="http://res.cloudinary.com/dhte80xl2/image/upload/v1752119073/yr3vlentsadfavvuqeim.jpg" alt="" className='sandimage'/></motion.button>
      <motion.button 
+      onClick={menuhandler}
        initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
            whileTap={{ scale: 0.95 }}
     whileHover={{ scale: 1.05, backgroundColor: "transparent" }}
     transition={{ type: "spring", stiffness: 400, damping: 10 }}className='sandbutton'><img src="http://res.cloudinary.com/dhte80xl2/image/upload/v1752119104/ujz0jbmtqsgnjawyv08l.avif" alt="" className='sandimage'/></motion.button>
      <motion.button 
+      onClick={menuhandler}
        initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
            whileTap={{ scale: 0.95 }}

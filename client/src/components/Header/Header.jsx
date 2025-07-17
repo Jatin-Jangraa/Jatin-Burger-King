@@ -18,11 +18,15 @@ const Header = () => {
 
   const [data ,setdata] = useState([])
 
-  
+
+
+console.log(length);
+
 
   useEffect(() => {
    
     setdata(orderitems)
+ 
 
   }, [orderitems])
   
@@ -41,7 +45,7 @@ const Header = () => {
 
             {data.length >0 ?
 
-             <Link to ="/cart"><FiShoppingCart/></Link> :<button  onClick={()=>toast.error("Cart Is Empty")}><FiShoppingCart/></button>}
+             <Link to ="/cart" className='linklength'><FiShoppingCart/><span className='lengthspan'>{data.length}</span></Link> :<button  onClick={()=>toast.error("Cart Is Empty")}><FiShoppingCart/></button>}
 <Link to={user?"/profile":"/login"}>
 
 {user?<img src={user.user.photo} alt="Profile" onError={(e)=>{e.target.onError = null; e.target.src ="http://res.cloudinary.com/dhte80xl2/image/upload/v1751449436/ryske7khyuovbrrer6jf.png"}} className="profile-pic" /> : <FiLogIn/> }

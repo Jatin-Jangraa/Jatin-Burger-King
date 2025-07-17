@@ -9,11 +9,14 @@ import Sidebar from '../../../components/Sidebar/Sidebar'
 import { motion } from 'framer-motion';
 import { dashapi } from '../../../Api';
 import DualLineChart from '../../../components/Chart/Chart';
+import { useSelector } from 'react-redux';
 
 
 
 const Admin = () => {
 
+
+  const {user} = useSelector((state)=>state.user.user) 
 
 
 
@@ -34,7 +37,7 @@ const Admin = () => {
 
     try {
 
-      const res = dashapi.get("/stats")
+      const res = dashapi.post("/stats",{userid:user._id})
 
 
       setapidata((await res).data.stats)
