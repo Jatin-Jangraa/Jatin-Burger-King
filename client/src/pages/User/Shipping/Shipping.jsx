@@ -188,7 +188,7 @@ console.log(res.data);
         <input type="text" name="area" value={address.area} onChange={handleChange} />
 
          <label>Contact No.</label>
-        <input type="text" name="Contactno" value={address.Contactno} onChange={handleChange} />
+        <input type="number" name="Contactno" value={address.Contactno} onChange={handleChange} />
 
 
         <label>City</label>
