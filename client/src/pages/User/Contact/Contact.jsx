@@ -47,7 +47,9 @@ const Contact = () => {
       toast.success('Message sent successfully!');
       setFormData({ ...formData, message: '' });
       setloading(false)
-    } catch {
+    } catch (error) {
+      console.log(error);
+      
       alert('Failed to send message.');
       setloading(false)
 
