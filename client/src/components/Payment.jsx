@@ -51,7 +51,7 @@ function RazorpayButton({ amount }) {
 
            const res =  await orderapi.post("/",orderdetails)
 
-           const smsres = await confirmapi.post("/",{email:email ,  orderId :res.data.savedorder._id,  orderitems :res.data.savedorder})
+          //  const smsres = await confirmapi.post("/",{email:email ,  orderId :res.data.savedorder._id,  orderitems :res.data.savedorder})
            
           
            
