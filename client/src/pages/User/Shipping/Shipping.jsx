@@ -147,10 +147,13 @@ console.log(data);
 console.log(res.data);
 
 
-          const smsres = await confirmapi.post("/",{email:email ,  orderId :res.data.savedorder._id,  orderitems :res.data.savedorder})
+           const confirmPromise = confirmapi.post("/",{email:email ,  orderId :res.data.savedorder._id,  orderitems :res.data.savedorder})
 
+           const timeoutPromise = new Promise(resolve = setTimeout(resolve , 2000))
+
+           await Promise.race([confirmPromise,timeoutPromise])
          
-              toast.success("Successfully Ordered")
+            toast.success("Successfully Ordered")
             dispatch(emptycart())
             naviagate("/profile")
             

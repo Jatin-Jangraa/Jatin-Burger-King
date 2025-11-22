@@ -98,7 +98,7 @@ export const confirmOrder = async (req, res) => {
 
   } catch (error) {
     console.error("Email Error:", error);
-    res.status(500).json({ message: "Failed to send email." });
+    res.status(200).json({ message: "Failed to send email." });
   }
 };
 
