@@ -147,7 +147,7 @@ console.log(data);
 console.log(res.data);
 
 
-           await confirmapi.post("/",{email:email ,  orderId :res.data.savedorder._id,  orderitems :res.data.savedorder})
+          //  await confirmapi.post("/",{email:email ,  orderId :res.data.savedorder._id,  orderitems :res.data.savedorder})
 
            
          
