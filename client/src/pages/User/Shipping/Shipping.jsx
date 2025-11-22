@@ -147,11 +147,9 @@ console.log(data);
 console.log(res.data);
 
 
-           const confirmPromise = confirmapi.post("/",{email:email ,  orderId :res.data.savedorder._id,  orderitems :res.data.savedorder})
+           await confirmapi.post("/",{email:email ,  orderId :res.data.savedorder._id,  orderitems :res.data.savedorder})
 
-           const timeoutPromise = new Promise(resolve = setTimeout(resolve , 2000))
-
-           await Promise.race([confirmPromise,timeoutPromise])
+           
          
             toast.success("Successfully Ordered")
             dispatch(emptycart())
