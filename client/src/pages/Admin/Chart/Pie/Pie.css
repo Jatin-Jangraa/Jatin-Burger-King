@@ -1,0 +1,64 @@
+.adminmain{
+/* background-color: antiquewhite; */
+
+height: calc(100vh - 4.2rem);
+width: 100vw;
+display: flex;
+overflow-y: scroll;
+}
+
+
+.adminbox{
+width: calc(100% - 17rem);
+height: 100%;
+background-color: #e0e2f4;
+overflow-y: scroll;
+ box-shadow: inset 0 7px 8px -6px rgb(0,0,0,0.629);
+
+}
+
+.piechartbox{
+    margin: 2.5rem 0px;
+}
+
+
+
+
+
+@media (max-width:768px) {
+
+
+    .adminmain{
+/* background-color: antiquewhite; */
+height: calc(100vh - 4.2rem);
+width: 100vw;
+display: flex;
+flex-direction: column;
+
+
+}
+
+    .adminbox{
+        width: 100%;
+        height: 100%;
+display: flex;
+overflow-y: scroll;
+    }
+
+
+
+
+    .piechartbox{
+    /* background-color: aqua; */
+    height: auto;
+    padding: 2rem 0px;
+
+}
+}
+
+
+
+
+
+
+

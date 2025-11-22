@@ -1,0 +1,83 @@
+.shipping-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(to bottom right, #f0f4ff, #dfefff);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.shipping-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.shipping-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shipping-form label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.shipping-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.location-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.location-btn:hover {
+  background: #0056c1;
+}
+
+.payment-options {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+.submit-btn {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #28c76f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #1da258;
+}
+
+@media (max-width: 600px) {
+  .shipping-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .shipping-form {
+    gap: 12px;
+  }
+
+  .submit-btn {
+    font-size: 15px;
+  }
+}
